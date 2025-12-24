@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Julieta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <!-- Efecto de Nieve -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+    </div>
+
+    <!-- Modo Sorpresa Overlay -->
+    <div id="surprise-overlay" class="overlay">
+        <div class="overlay-content">
+            <h1 id="surprise-title"></h1>
+            <p id="surprise-message"></p>
+            <button id="surprise-btn" class="btn-primary"></button>
+        </div>
+    </div>
+
+    <!-- Contenido Principal (Oculto inicialmente por el overlay) -->
+    <div id="main-content" class="hidden">
+        <header>
+            <nav>
+                <div class="logo">J&J</div>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Cambiar modo">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="hero" class="fade-in">
+                <div class="hero-container">
+                    <h2 id="hero-title"></h2>
+                    <h3 id="hero-subtitle"></h3>
+                    <p id="hero-description"></p>
+                    <div class="featured-photo-container">
+                        <img id="featured-photo" src="" alt="Foto destacada">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Timeline Section -->
+            <section id="history" class="section-padding fade-in">
+                <h2 class="section-title">Nuestra Historia</h2>
+                <div id="timeline" class="timeline-container"></div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section id="gallery-section" class="section-padding fade-in">
+                <h2 class="section-title">Nuestros Viajes</h2>
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="Argentina">Argentina</button>
+                    <button class="filter-btn" data-category="Barcelona">Barcelona</button>
+                    <button class="filter-btn" data-category="Bilbao">Bilbao</button>
+                </div>
+                <div id="gallery-grid" class="gallery-grid"></div>
+            </section>
+
+            <!-- Messages Section -->
+            <section id="messages-section" class="section-padding fade-in">
+                <h2 class="section-title">Notas para vos</h2>
+                <div id="messages-grid" class="messages-grid"></div>
+            </section>
+
+            <!-- Playlist Section -->
+            <section id="playlist-section" class="section-padding fade-in">
+                <h2 class="section-title">Nuestra Música</h2>
+                <div id="spotify-container" class="spotify-container"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p id="footer-phrase"></p>
+            <p>&copy; <span id="footer-year"></span></p>
+        </footer>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <span class="close-lightbox">&times;</span>
+        <button class="lightbox-prev" aria-label="Anterior">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+        <button class="lightbox-next" aria-label="Siguiente">&#10095;</button>
+    </div>
+
+    <script src="data/content.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
