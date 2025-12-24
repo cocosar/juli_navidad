@@ -13,7 +13,7 @@ const APP_DATA = {
     "title": "Esta Navidad es especial",
     "subtitle": "Porque estás vos ✨",
     "description": "Un recorrido por todos los momentos que hacen que cada día a tu lado sea un regalo.",
-    "featuredPhoto": "assets/photos/IMG_3761.jpeg"
+    "featuredPhoto": "assets/photos/IMG_3761.JPEG"
   },
   "history": [
     {
@@ -39,7 +39,7 @@ const APP_DATA = {
   ],
     "gallery": [
       {
-        "src": "assets/photos/IMG_3554.jpeg",
+        "src": "assets/photos/IMG_3554.JPEG",
         "alt": "Nosotros en Argentina",
         "category": "Argentina"
       },
